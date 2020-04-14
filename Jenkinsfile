@@ -33,8 +33,8 @@ node {
 	
 	stage('Deploy to Kubernates'){
 		steps	{
-			sh 'kubectl create -f deployment.yaml'
-			sh 'kubectl create -f service.yaml'
+			sh "kubectl create -f deployment.yaml"
+			sh "kubectl create -f service.yaml"
 		
 		}
 	
