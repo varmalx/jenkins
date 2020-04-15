@@ -1,0 +1,13 @@
+# Image jenkins-nodeapp
+
+image: varmalx/jenkins
+
+# Application name 
+app: jenkins-nodeapp
+# Service type is LoadBalancer
+spec:
+  type: LoadBalancer
+# Server ports to expose
+ports:
+  port: 8080
+  targetPort: 8080

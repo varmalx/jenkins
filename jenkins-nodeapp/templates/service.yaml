@@ -1,0 +1,12 @@
+# hello-kubernetes.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.app }}
+spec:
+  type: {{ .Values.type }}
+  ports:
+  - port: {{ .Values.ports.port }}
+    targetPort: {{ .Values.port.targetPort }}
+  selector:
+    app: {{ .Values.app }}
